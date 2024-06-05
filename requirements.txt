@@ -5,4 +5,5 @@ flask-compress
 matplotlib
 pandas 
 gunicorn
+seaborn
 
