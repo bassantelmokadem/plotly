@@ -52,25 +52,27 @@ install('plotly')
 
 # In[36]:
 
+# Your other imports and app setup
 
+
+import matplotlib.pyplot as plt
+from dash import Dash, dcc, html
 import dash
-from dash import dcc
-from dash import html
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 import json
 import re
-import matplotlib.pyplot as plt
 from plotly.offline import init_notebook_mode,iplot
 from pandas.io.json import json_normalize
 import numpy as np
 import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output
-from dash import Dash, dcc, html
 import plotly.express as px
 
-
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run_server(host='0.0.0.0', port=port)
 # # Reading Data
 
 # In[38]:
